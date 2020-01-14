@@ -18,13 +18,27 @@ quizButton.addEventListener('click', () => {
     const confirmation = confirm(`Are you sure you want to take the quiz, ${name}?`);
     if (confirmation === false) return;
 
+    // Three YES/NO questions about you. Use your `isYes` function to determine the user's response, then compare to the correct answer. Track number of correct responses.
+    const answerOne = prompt('Is my name Jenna?');
+    const answerTwo = prompt('Have I ever lived in Boston?');
+    const answerThree = prompt('Do I like chocolate?');
+
+    let score = 0;
+    if (isYes(answerOne)) score += 1;
+    if (isYes(answerTwo)) score += 1;
+    if (isYes(answerThree)) score += 1;
+
+    console.log(score);
 });
 
 
-// 1. Three YES/NO questions about you. Use your `isYes` function to determine the user's
-// response, then compare to the correct answer. Track number of correct responses.
+
 // 1. Alert the user that the quiz is complete and their results will now be written to the webpage.
+
+
 // 1. Write a response to the page with their name and number correct, for example: "Okay Bernice, you got 2/3 correct".
+
+
 // 1. STRETCH goal(s):
 //   - Add a class to style the result differently based on
 //   good or bad score
