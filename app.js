@@ -59,15 +59,3 @@ quizButton.addEventListener('click', () => {
         results.textContent = `Yikes, ${name}! You got ${score} out of 3 answers correct. Maybe you should study more next time.`;
     }
 });
-
-
-
-
-
-
-
-
-// 1. STRETCH goal(s):
-//   - Add a class to style the result differently based on
-//   good or bad score
-//   - Include a percentage, without decimal places.
