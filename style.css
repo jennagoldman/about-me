@@ -47,3 +47,21 @@ img {
     border: 1px solid #000;
 }
 
+#results {
+    display: none;
+}
+
+#score-percent {
+    color: #FFF;
+}
+
+.good {
+    background: linear-gradient(to right, rgb(71, 206, 71), rgb(168, 243, 168)) !important;
+}
+
+.bad {
+    background: linear-gradient(to right, tomato, rgb(251, 156, 146)) !important;
+}
+
+
+

@@ -9,6 +9,13 @@ const quizButton = document.getElementById('quiz-button');
 // The element to which you will write the quiz results
 const results = document.getElementById('results');
 
+// The element that will suggest the user take the quiz
+const quizPrompt = document.getElementById('quiz-prompt');
+
+const quizSection = document.getElementById('quiz');
+
+const percentage = document.getElementById('score-percent');
+
 
 // Subscribe to the button's click event using addEventListener
 quizButton.addEventListener('click', () => {
@@ -19,24 +26,45 @@ quizButton.addEventListener('click', () => {
     if (confirmation === false) return;
 
     // Three YES/NO questions about you. Use your `isYes` function to determine the user's response, then compare to the correct answer. Track number of correct responses.
-    const answerOne = prompt('Is my name Jenna?');
+    const answerOne = prompt('Do I have a cat named Loki?');
     const answerTwo = prompt('Have I ever lived in Boston?');
     const answerThree = prompt('Do I like chocolate?');
 
     let score = 0;
     if (isYes(answerOne)) score += 1;
-    if (isYes(answerTwo)) score += 1;
+    if (!isYes(answerTwo)) score += 1;
     if (isYes(answerThree)) score += 1;
 
-    console.log(score);
+
+    // Alert the user that the quiz is complete and their results will now be written to the webpage.
+    const quizCompleted = alert(`${name}, you have now completed the quiz; get ready to see your results!`);
+
+
+    // Write a response to the page with their name and number correct, for example: "Okay Bernice, you got 2/3 correct".
+    quizPrompt.style.display = 'none';
+    quizButton.style.display = 'none';
+    results.style.display = 'block';
+
+
+    // STRETCH GOAL: Include score percentage, without decimal
+    const scorePercent = Math.floor((score / 3) * 100);
+    percentage.textContent = `${scorePercent}%`;
+    
+    // STRETCH GOAL: Add a class to style the result differently based on ood or bad score
+    if (score > 1) {
+        quizSection.className = 'good';
+        results.textContent = `Congrats, ${name}! You got ${score} out of 3 answers correct!`;
+    } else {
+        quizSection.className = 'bad';
+        results.textContent = `Yikes, ${name}! You got ${score} out of 3 answers correct. Maybe you should study more next time.`;
+    }
 });
 
 
 
-// 1. Alert the user that the quiz is complete and their results will now be written to the webpage.
 
 
-// 1. Write a response to the page with their name and number correct, for example: "Okay Bernice, you got 2/3 correct".
+
 
 
 // 1. STRETCH goal(s):

@@ -19,7 +19,7 @@ test('validate "yes" or "y" as true', function(assert) {
     assert.equal(shouldAlsoBeTrue, true);
 });
 
-test('invalidate "no" or "n" as false', function(assert) {
+test('consider "no" or "n" as false', function(assert) {
     // Arrange
     // Set up your parameters and expectations
 
