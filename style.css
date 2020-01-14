@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Helvetica Neue";
+    margin: 0 auto;
+    width: 75%;
+}
+
+h1, h2 {
+    color: #5E2FFD;
+}
+
+img {
+    border-radius: 5px;
+}
+
+.centered {
+    text-align: center;
+}
+
+#quiz-button {
+    color: #FFF;
+    background: #5E2FFD;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 150px;
+    margin: 20px auto;
+    padding: 5px;
+    display: block;
+    cursor: pointer;
+}
+
