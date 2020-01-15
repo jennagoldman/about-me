@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFF;
+    background: #0F98DC;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+header, main {
+    text-align: center;
+    width: 75%;
+    margin: 0 auto;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
