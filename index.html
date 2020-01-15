@@ -14,21 +14,24 @@
     <div class="container">
         <header>
             <h1>How Many Cookies?</h1>
-            <h2>Can you guess how many cookies I ate last night?<br> Enter a number below to find out.</h2>
+            <h2>Can you guess how many cookies I ate last night?<br> Enter a number between 0-10 below.</h2>
+            <h2 id="correct-number-display"></h2>
         </header>
 
         <main>
-            <label for="submit"># of cookies:</label><input id="guess">
-            <button id="submit">Submit</button>
+            <div id="form">
+                <label for="guess-input"># of cookies:</label><input id="guess-input">
+                <button id="submit">Submit</button>
+            </div>
             
-            <div class="hidden" id="status">
-                <p>You have <span="turns-left">___</span> tries left!</p>
+            <div id="status">
+                <p>You have <span id="turns-left">___</span> tries left!</p>
             
-                <p>Your guess is too <span="high-low">___</span>.</p>
+                <p>Your guess is too <span id="high-low">___</span>.</p>
             </div>
 
-            <div class="hidden" id="results">
-                <p>You <span id="win-lose">___</span>!</p>
+            <div id="results">
+                <p id="win-lose">___</p>
             </div>
         </main>
     </div>

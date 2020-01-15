@@ -21,13 +21,9 @@ body {
     opacity: 0.9;
 }
 
-
-
-
 h1 {
     font-family: 'Courier New', Courier, monospace;
     font-size: 36px;
-
     text-transform: uppercase;
 }
 
@@ -42,10 +38,10 @@ label {
     padding: 10px;
 }
 
-#guess {
+#guess-input {
     font-size: 14px;
     border: none;
-    width: 40px;
+    width: 30px;
     padding: 3px 10px;
 }
 
@@ -59,13 +55,20 @@ button {
     border: none;
     border-radius: 3px;
     padding: 5px 10px;
+    margin: 20px auto;
     display: block;
     cursor: pointer;
-    margin: 20px auto;
 }
 
-.hidden {
+#status, #results {
     display: none;
+}
+
+#win-lose {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 

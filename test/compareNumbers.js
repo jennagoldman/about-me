@@ -3,7 +3,7 @@ export default function compareNumbers(guess, correctNumber) {
         return 0;
     } else if (guess < correctNumber) {
         return -1;
-    } else {
+    } else if (guess > correctNumber) {
         return 1;
     }
 }
