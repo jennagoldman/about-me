@@ -6,31 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon" />
+    <title>How Many Cookies?</title>
 </head>
 
 <body>
-    <header>
-        <h1>How Many Cookies?</h1>
-        <h2>Can you guess how many cookies I ate last night?<br> Enter a number below to find out.</h2>
-    </header>
+    <div class="container">
+        <header>
+            <h1>How Many Cookies?</h1>
+            <h2>Can you guess how many cookies I ate last night?<br> Enter a number below to find out.</h2>
+        </header>
 
-    <main>
-        <input id="guess">
-        <button>Submit</button>
-        
-        <div>
-            <p>You have <span="turns-left">___</span> tries left!</p>
-           
-            <p>Your guess is too <span="high-low">___</span>.</p>
+        <main>
+            <label for="submit"># of cookies:</label><input id="guess">
+            <button id="submit">Submit</button>
+            
+            <div class="hidden" id="status">
+                <p>You have <span="turns-left">___</span> tries left!</p>
+            
+                <p>Your guess is too <span="high-low">___</span>.</p>
+            </div>
 
-            <p>You <span id="win-lose">___</span>!</p>
-        </div>
-    </main>
-
-    <footer>
-
-    </footer>
+            <div class="hidden" id="results">
+                <p>You <span id="win-lose">___</span>!</p>
+            </div>
+        </main>
+    </div>
 
     <script type="module" src="app.js"></script>
 </body>
