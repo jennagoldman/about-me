@@ -1,5 +1,5 @@
 // Import compareNumbers function
-import compareNumbers from './test/compareNumbers.js';
+import compareNumbers from './compareNumbers.js';
 
 // Get needed elements from the DOM
 const formBox = document.getElementById('form');
@@ -21,7 +21,8 @@ const winOrLose = document.getElementById('win-lose');
 // Set nitial state
 let turns = 4;
 
-const correctNumber = (Math.round(Math.random() * 10));
+// Generate a correct number
+const correctNumber = (Math.floor(Math.random() * 10));
 
 // Add event listener for button click
 submitButton.addEventListener('click', () => {

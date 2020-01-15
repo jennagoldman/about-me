@@ -41,8 +41,10 @@ label {
 #guess-input {
     font-size: 14px;
     border: none;
-    width: 30px;
-    padding: 3px 10px;
+    width: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
 }
 
 button {

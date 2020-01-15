@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 // import example from '../src/example.js';
-import compareNumbers from './compareNumbers.js';
+import compareNumbers from './test/compareNumbers.js';
 const test = QUnit.test;
 
 test('should be equal, resulting in 0', function(assert) {
