@@ -1,6 +1,5 @@
-
 // Import isYes function
-import isYes from './src/is-yes.js';
+import isYes from '/is-yes.js';
 
 // Reference needed DOM elements:
 // The button the user will click for taking the quiz
