@@ -4,7 +4,7 @@
 
 body {
     color: #FFF;
-    background-image: url('/assets/cookies-bg.jpg');
+    background-image: url('./assets/cookies-bg.jpg');
     background-size: cover;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
