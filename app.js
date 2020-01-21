@@ -28,22 +28,22 @@ const correctNumber = (Math.floor(Math.random() * 10));
 submitButton.addEventListener('click', () => {
 
     // Turn the input string into a number
-    const guessStr = guessInput.value;
-    const guess = parseInt(guessStr);
+    //const guessStr = guessInput.value;
+    //const guess = parseInt(guessStr);
 
-    // const varName = (compareNumber(Number(guessInput.value), correctNumber))
+    const varName = (compareNumbers(Number(guessInput.value), correctNumber));
     // Run compareNumbers function and update visibility of display elements accordingly
-    if (compareNumbers(guess, correctNumber) === 0) {
+    if (varName === 0) {
         formBox.style.display = 'none';
         statusBox.style.display = 'none';
         resultsBox.style.display = 'block';
         winOrLose.textContent = `You win! The number was ${correctNumber}.`;
-    } else if (compareNumbers(guess, correctNumber) === -1) {
+    } else if (varName === -1) {
         turns --;
         statusBox.style.display = 'block';
         turnsLeft.textContent = `${turns}`;
         highOrLow.textContent = 'low';
-    } else if (compareNumbers(guess, correctNumber) === 1) {
+    } else if (varName === 1) {
         turns --;
         statusBox.style.display = 'block';
         turnsLeft.textContent = `${turns}`;
